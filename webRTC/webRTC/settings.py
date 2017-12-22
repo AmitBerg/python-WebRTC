@@ -21,10 +21,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '+ytnoc8x-_s7fhgm-&krzhlwg4&v#nap^pkca-ww-bnmp6fg&h'
+SECRET_KEY = '+ytnoc8x-_s7fhgm-&krzhlwg4&v#nap^pkca-ww-bnmp6fg&h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -134,10 +134,14 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-SECRET_KEY = dj_database_url.config('SECRET_KEY')
-DEBUG = dj_database_url.config('DEBUG', default=False, cast=bool)
+# SECRET_KEY = dj_database_url.config('SECRET_KEY')
+# DEBUG = dj_database_url.config('DEBUG', default=False, cast=bool)
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=dj_database_url.config('DATABASE_URL')
+#     )
+# }
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=dj_database_url.config('DATABASE_URL')
-    )
+    'default:' 'postgres://xavsbtikodtfai:adc58c0c5a9b270f57dc92ef9903c73da676c4adccfe1d165cdebcfe4ba5926a@ec2-23-21-236-249.compute-1.amazonaws.com:5432/d3pqv8rjedrqo0'
 }
