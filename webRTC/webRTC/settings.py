@@ -26,7 +26,7 @@ SECRET_KEY = '+ytnoc8x-_s7fhgm-&krzhlwg4&v#nap^pkca-ww-bnmp6fg&h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['python-webrtc.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
