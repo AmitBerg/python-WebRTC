@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'webRTC.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
@@ -142,6 +142,6 @@ STATICFILES_DIRS = (
 #     )
 # }
 
-DATABASES = {
-    'default:' 'postgres://xavsbtikodtfai:adc58c0c5a9b270f57dc92ef9903c73da676c4adccfe1d165cdebcfe4ba5926a@ec2-23-21-236-249.compute-1.amazonaws.com:5432/d3pqv8rjedrqo0'
-}
+# DATABASES = {
+#     'default:' 'postgres://xavsbtikodtfai:adc58c0c5a9b270f57dc92ef9903c73da676c4adccfe1d165cdebcfe4ba5926a@ec2-23-21-236-249.compute-1.amazonaws.com:5432/d3pqv8rjedrqo0'
+# }
